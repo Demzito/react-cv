@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-cv/static/css/main.e6b20ded.css",
-    "main.js": "/react-cv/static/js/main.d7f3ce3a.js",
+    "main.js": "/react-cv/static/js/main.b2d1a719.js",
     "static/js/787.11baedba.chunk.js": "/react-cv/static/js/787.11baedba.chunk.js",
     "static/media/CV.pdf": "/react-cv/static/media/CV.09cf368ae8f8c9574360.pdf",
     "static/media/project0.png": "/react-cv/static/media/project0.191acd185844f09c6ccb.png",
@@ -16,11 +16,11 @@
     "index.html": "/react-cv/index.html",
     "static/media/shape.svg": "/react-cv/static/media/shape.3135c674a2dda460b6d9.svg",
     "main.e6b20ded.css.map": "/react-cv/static/css/main.e6b20ded.css.map",
-    "main.d7f3ce3a.js.map": "/react-cv/static/js/main.d7f3ce3a.js.map",
+    "main.b2d1a719.js.map": "/react-cv/static/js/main.b2d1a719.js.map",
     "787.11baedba.chunk.js.map": "/react-cv/static/js/787.11baedba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6b20ded.css",
-    "static/js/main.d7f3ce3a.js"
+    "static/js/main.b2d1a719.js"
   ]
 }
