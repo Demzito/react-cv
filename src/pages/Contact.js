@@ -22,7 +22,7 @@ const Contact = () => {
                             </CopyToClipboard>
                         </li>
                         <li>
-                            <i className="fas fa-mobile-alt"></i>
+                            <i className="fa-solid fa-envelope"></i>
                             <CopyToClipboard text="demazureetienne@gmail.com">
                                 <span className="clickInput" onClick={() => { alert('E-mail copié !');}}>demazureetienne@gmail.com</span>
                             </CopyToClipboard>
