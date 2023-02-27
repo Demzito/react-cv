@@ -1,24 +1,50 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Project extends Component {
-    state = {
-        showInfo: false
+  state = {
+    showInfo: false,
+    selectedPicture: 0,
+    btnPrevious: false,
+    btnNext: false,
+  };
+
+  handleInfo = () => {
+    this.setState({
+      showInfo: !this.state.showInfo,
+    });
+  };
+
+  handleBtnPrevious = () => {
+    let selectedPicture = this.state.selectedPicture;
+    if (selectedPicture <= 0) {
+      selectedPicture = this.props.item.picture.length - 1;
+    } else {
+      selectedPicture = selectedPicture - 1;
     }
 
-    handleInfo = () => {
-        this.setState({
-            showInfo:!this.state.showInfo
-        })
-    }
+    this.setState({
+      btnPrevious: !this.state.btnPrevious,
+      selectedPicture: selectedPicture,
+    });
+  };
 
-    handlePictures = () => {
-      this.setState({
-          showPictures:!this.state.showPictures
-      })
-  }
+  handleBtnNext = () => {
+    let selectedPicture = this.state.selectedPicture;
+    if (selectedPicture < this.props.item.picture.length - 1) {
+      selectedPicture = selectedPicture + 1;
+    } else {
+      selectedPicture = 0;
+    }
+    this.setState({
+      btnNext: !this.state.btnNext,
+      selectedPicture: selectedPicture,
+    });
+  };
 
   render() {
     let { name, languagesIcons, source, info, picture } = this.props.item;
+    let { selectedPicture } = this.state;
+
     return (
       <div className="project">
         <div className="icons">
@@ -27,38 +53,53 @@ class Project extends Component {
           ))}
         </div>
         <h3>{name}</h3>
-        <img src={picture} alt="" onClick={this.handleInfo}/>
+        <img src={picture[0]} alt="" onClick={this.handleInfo} />
         <span className="infos" onClick={this.handleInfo}>
-            <i className="fas fa-plus-circle"></i>
+          <i className="fas fa-plus-circle"></i>
         </span>
 
-        {
-            this.state.showInfo && (
-                <div className="showInfos">
-                    <div className="infosContent">
-                        <div className="head">
-                            <h2>{name}</h2>
-                            <div className="sourceCode">
-                                <a href={source} rel="noopener noreferrer" className="button" target="_blank">Code Source</a>
-                            </div>
-                        </div>
-
-                        <p className="text">{info}</p>
-
-                        <img src={picture} alt="" onClick={this.handlePictures}/>
-                        {
-                          this.state.showPictures && (
-                            <div><h2>Prévisualisation du projet en cours de construction.</h2> </div>
-                          )
-                        }
-                        
-
-                        <div className="button return" onClick={this.handleInfo}>Retourner sur la page</div>
-                    </div>
+        {this.state.showInfo && (
+          <div className="showInfos">
+            <div className="infosContent">
+              <div className="head">
+                <h2>{name}</h2>
+                <div className="sourceCode">
+                  <a
+                    href={source}
+                    rel="noopener noreferrer"
+                    className="button"
+                    target="_blank"
+                  >
+                    Code Source
+                  </a>
                 </div>
-            )
-        }
+              </div>
 
+              <p className="text">{info}</p>
+
+              <img
+                src={picture[selectedPicture]}
+                alt=""
+              />
+
+              <div className="nav-carousel">
+                <div
+                  className="arrow button-previous"
+                  onClick={this.handleBtnPrevious}
+                >
+                  <i className="fa-solid fa-arrow-left fa-3x"></i>
+                </div>
+                <div className="arrow button-next" onClick={this.handleBtnNext}>
+                  <i className="fa-solid fa-arrow-right fa-3x"></i>
+                </div>
+              </div>
+
+              <div className="button return" onClick={this.handleInfo}>
+                Retourner sur la page
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
