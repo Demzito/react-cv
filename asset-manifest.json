@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/react-cv/static/css/main.e6b20ded.css",
-    "main.js": "/react-cv/static/js/main.b2d1a719.js",
+    "main.css": "/react-cv/static/css/main.1f9b9a13.css",
+    "main.js": "/react-cv/static/js/main.657604a0.js",
     "static/js/787.11baedba.chunk.js": "/react-cv/static/js/787.11baedba.chunk.js",
+    "static/media/project1.png": "/react-cv/static/media/project1.b4089df0a139da737938.png",
+    "static/media/project12.png": "/react-cv/static/media/project12.f73a733a82980efb1730.png",
+    "static/media/project15.png": "/react-cv/static/media/project15.bbdab8ed0311e5c544b2.png",
+    "static/media/Trending.png": "/react-cv/static/media/Trending.c02214f945d5c1bd2d80.png",
+    "static/media/project14.png": "/react-cv/static/media/project14.1b1d42f20adb53eb6d2a.png",
     "static/media/CV.pdf": "/react-cv/static/media/CV.09cf368ae8f8c9574360.pdf",
     "static/media/project0.png": "/react-cv/static/media/project0.191acd185844f09c6ccb.png",
-    "static/media/project1.jpg": "/react-cv/static/media/project1.2a11211787d71fc99165.jpg",
+    "static/media/project13.png": "/react-cv/static/media/project13.84ff1892503035341167.png",
+    "static/media/SignUp.png": "/react-cv/static/media/SignUp.0bfd750b0c1b0bdb6869.png",
     "static/media/project5.jpg": "/react-cv/static/media/project5.e10af0b2cafe2b87136c.jpg",
     "static/media/project4.jpg": "/react-cv/static/media/project4.a597c7981743d1e1ee54.jpg",
     "static/media/image-home.jpg": "/react-cv/static/media/image-home.3650c8af5ca7c197d8e1.jpg",
+    "static/media/Profil.png": "/react-cv/static/media/Profil.cb4c87436c95a0567f5a.png",
     "static/media/map.jpg": "/react-cv/static/media/map.3e5949c9b6f7cd03bd31.jpg",
     "static/media/project3.jpg": "/react-cv/static/media/project3.a75dfec36ba494fac157.jpg",
     "static/media/project2.jpg": "/react-cv/static/media/project2.cea341b203581818f98e.jpg",
     "static/media/profile.jpg": "/react-cv/static/media/profile.d81cec5db2ea8f9bd330.jpg",
     "index.html": "/react-cv/index.html",
     "static/media/shape.svg": "/react-cv/static/media/shape.3135c674a2dda460b6d9.svg",
-    "main.e6b20ded.css.map": "/react-cv/static/css/main.e6b20ded.css.map",
-    "main.b2d1a719.js.map": "/react-cv/static/js/main.b2d1a719.js.map",
+    "main.1f9b9a13.css.map": "/react-cv/static/css/main.1f9b9a13.css.map",
+    "main.657604a0.js.map": "/react-cv/static/js/main.657604a0.js.map",
     "787.11baedba.chunk.js.map": "/react-cv/static/js/787.11baedba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6b20ded.css",
-    "static/js/main.b2d1a719.js"
+    "static/css/main.1f9b9a13.css",
+    "static/js/main.657604a0.js"
   ]
 }
