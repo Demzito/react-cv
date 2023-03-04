@@ -53,7 +53,7 @@ class Project extends Component {
           ))}
         </div>
         <h3>{name}</h3>
-        <img src={picture[0]} alt="" onClick={this.handleInfo} />
+        <img src={picture[0]} alt="" className="img-projects" onClick={this.handleInfo} />
         <span className="infos" onClick={this.handleInfo}>
           <i className="fas fa-plus-circle"></i>
         </span>
@@ -77,7 +77,7 @@ class Project extends Component {
 
               <p className="text">{info}</p>
 
-              <img src={picture[selectedPicture]} alt="" />
+              <img src={picture[selectedPicture]} alt="" className="img-project" />
 
               <div>
                 {picture.length > 1 ? (
