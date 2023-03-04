@@ -16,7 +16,7 @@ const Navigation = () => {
             <div className="navigation">
                 <ul>
                     <li>
-                        <NavLink className={(navData) => navData.isActive ? "navActive" : "" } end to="/react-cv">
+                        <NavLink className={(navData) => navData.isActive ? "navActive" : "" } end to="/react-cv/">
                             <i className="fas fa-home"></i>
                             <span>Accueil</span>
                         </NavLink>
