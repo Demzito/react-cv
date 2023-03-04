@@ -77,21 +77,25 @@ class Project extends Component {
 
               <p className="text">{info}</p>
 
-              <img
-                src={picture[selectedPicture]}
-                alt=""
-              />
+              <img src={picture[selectedPicture]} alt="" />
 
-              <div className="nav-carousel">
-                <div
-                  className="arrow button-previous"
-                  onClick={this.handleBtnPrevious}
-                >
-                  <i className="fa-solid fa-arrow-left fa-3x"></i>
-                </div>
-                <div className="arrow button-next" onClick={this.handleBtnNext}>
-                  <i className="fa-solid fa-arrow-right fa-3x"></i>
-                </div>
+              <div>
+                {picture.length > 1 ? (
+                  <div className="nav-carousel">
+                    <div
+                      className="arrow button-previous"
+                      onClick={this.handleBtnPrevious}
+                    >
+                      <i className="fa-solid fa-arrow-left fa-3x"></i>
+                    </div>
+                    <div
+                      className="arrow button-next"
+                      onClick={this.handleBtnNext}
+                    >
+                      <i className="fa-solid fa-arrow-right fa-3x"></i>
+                    </div>
+                  </div>
+                ) : null}
               </div>
 
               <div className="button return" onClick={this.handleInfo}>

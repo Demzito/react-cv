@@ -170,7 +170,7 @@
                 width: 900px;
                 margin: 0 auto;
                 color: $color-5;
-                background: $color-7;
+                background: $background-color;
                 border-radius: $borderRadius;
                 padding: 2rem;
                 box-shadow: 0 10px 10px #333;
@@ -251,7 +251,7 @@
     }
 }
 
-@media (max-width: 650px) and (min-width: 521px) {
+@media (max-width: 850px) and (min-width: 521px) {
     .portfolioContent {
         .project {
             width: 49% !important;
@@ -278,6 +278,10 @@
         .project {
             grid-template-rows: 30px 40px 80px 40px !important;
             width: 98% !important;
+
+            .infosContent {
+                width: 90% !important;
+            }
 
             img {
                 height: 100% !important;
