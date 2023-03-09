@@ -6,7 +6,7 @@ class Languages extends Component {
     languages: [
       { id: 1, value: "Javascript", xp: 1.7 },
       { id: 2, value: "Css", xp: 1.9 },
-      { id: 3, value: "Php", xp: 0.9 },
+      { id: 3, value: "SQL", xp: 0.9 },
       { id: 4, value: "C", xp: 0.6 },
     ],
     frameworks: [

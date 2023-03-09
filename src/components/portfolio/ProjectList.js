@@ -18,7 +18,6 @@ class ProjectList extends Component {
     handleRadio = (event) => {
         let radio = event.target.value;
         this.setState({selectedRadio: radio});
-        console.log(radio, "radio");
 
     }
 
